@@ -136,7 +136,7 @@ const Hero: React.FC = () => {
   return (
     <div 
       ref={heroRef}
-      className="relative h-screen flex items-center justify-center bg-black bg-[url('/hero-bg.jpg')] bg-cover bg-center bg-blend-overlay bg-opacity-60"
+      className="relative h-screen flex items-center justify-center bg-black"
     >
       <div className="absolute inset-0 bg-black/70"></div>
       

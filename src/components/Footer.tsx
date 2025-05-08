@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
           <div className="lg:col-span-2">
             <a href="/" className="block mb-4">
               <img 
-                src="/lovable-uploads/d659594b-31d2-4101-be92-ad4bf7f6acdf.png" 
+                src="/lovable-uploads/f72adf90-9d7d-4121-b5b7-e964c9cd0659.png" 
                 alt="DigitallyNZ Logo"
                 className="h-16"
               />

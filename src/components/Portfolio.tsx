@@ -13,47 +13,50 @@ interface Project {
 const Portfolio: React.FC = () => {
   const [activeFilter, setActiveFilter] = useState('all');
 
+  // Default placeholder image for fallback
+  const placeholderImage = "/placeholder.svg";
+
   const projects: Project[] = [
     {
       id: 1,
       title: "Kiwi Retail E-commerce",
       category: "ecommerce",
-      image: "/portfolio-1.jpg",
+      image: "/placeholder.svg",
       description: "SEO & Web Development"
     },
     {
       id: 2,
       title: "Auckland Tourism Campaign",
       category: "marketing",
-      image: "/portfolio-2.jpg",
+      image: "/placeholder.svg",
       description: "Digital Marketing & Social Media"
     },
     {
       id: 3,
       title: "NZ Tech Startup",
       category: "branding",
-      image: "/portfolio-3.jpg",
+      image: "/placeholder.svg",
       description: "Branding & Strategy"
     },
     {
       id: 4,
       title: "Wellington Coffee Chain",
       category: "branding",
-      image: "/portfolio-4.jpg",
+      image: "/placeholder.svg",
       description: "Branding & Social Media"
     },
     {
       id: 5,
       title: "Christchurch Real Estate",
       category: "marketing",
-      image: "/portfolio-5.jpg",
+      image: "/placeholder.svg",
       description: "SEO & Google Ads"
     },
     {
       id: 6,
       title: "NZ Financial Services",
       category: "ecommerce",
-      image: "/portfolio-6.jpg",
+      image: "/placeholder.svg",
       description: "Web Development & SEO"
     }
   ];
@@ -61,6 +64,11 @@ const Portfolio: React.FC = () => {
   const filteredProjects = activeFilter === 'all' 
     ? projects 
     : projects.filter(project => project.category === activeFilter);
+
+  // Handle image error by replacing with placeholder
+  const handleImageError = (e: React.SyntheticEvent<HTMLImageElement>) => {
+    e.currentTarget.src = placeholderImage;
+  };
 
   return (
     <section id="portfolio" className="section-padding bg-black">
@@ -111,6 +119,7 @@ const Portfolio: React.FC = () => {
                   src={project.image} 
                   alt={project.title} 
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  onError={handleImageError}
                 />
               </div>
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-70"></div>
