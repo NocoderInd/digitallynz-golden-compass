@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
           <div className="flex items-center">
             <a href="/" className="text-2xl font-bold text-white">
               <img 
-                src="/lovable-uploads/f72adf90-9d7d-4121-b5b7-e964c9cd0659.png" 
+                src="/lovable-uploads/59460437-45f7-489f-9274-07e94323332e.png" 
                 alt="DigitallyNZ Logo"
                 className="h-14"
               />
