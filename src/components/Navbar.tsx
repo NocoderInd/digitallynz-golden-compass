@@ -28,7 +28,11 @@ const Navbar: React.FC = () => {
         <div className="flex justify-between items-center py-5">
           <div className="flex items-center">
             <a href="/" className="text-2xl font-bold text-white">
-              Digitally<span className="text-golden">NZ</span>
+              <img 
+                src="/lovable-uploads/d659594b-31d2-4101-be92-ad4bf7f6acdf.png" 
+                alt="DigitallyNZ Logo"
+                className="h-14"
+              />
             </a>
           </div>
           

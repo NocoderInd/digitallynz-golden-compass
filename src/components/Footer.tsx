@@ -12,10 +12,14 @@ const Footer: React.FC = () => {
       <div className="container-custom py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           <div className="lg:col-span-2">
-            <a href="/" className="text-3xl font-bold">
-              Digitally<span className="text-golden">NZ</span>
+            <a href="/" className="block mb-4">
+              <img 
+                src="/lovable-uploads/d659594b-31d2-4101-be92-ad4bf7f6acdf.png" 
+                alt="DigitallyNZ Logo"
+                className="h-16"
+              />
             </a>
-            <p className="mt-4 text-gray-400 max-w-md">
+            <p className="text-gray-400 max-w-md">
               Your strategic partner for digital growth. We help businesses across New Zealand leverage digital solutions for lasting success.
             </p>
             <div className="mt-6">
